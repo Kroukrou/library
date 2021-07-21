@@ -1,0 +1,498 @@
+/* CSS appliqué de manière générale */
+
+
+
+ body{ margin: 0%;  
+  padding: 0%;  
+    word-break: break-word;
+    box-sizing: border-box;
+}
+
+body a {
+    
+    text-decoration: none;
+    cursor:pointer;
+    color : black;
+    width:auto;
+    height:auto;
+
+}
+
+body ul {
+    list-style-type: none;
+} 
+
+/* Partie Header + calque WebDesigner */
+
+body header div:first-child{
+    
+    height:1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(60%);
+}
+
+#calque_1{
+    
+    height: 7rem;
+    width:7rem;
+}
+
+/* barre de navigation */
+body nav{
+    background-color:beige;
+    width:100vw;
+}
+
+
+body nav ul{
+    
+    /* width:10rem; */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right:0%;
+    width: auto;
+    height:auto;
+    }
+
+ body nav ul li{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width:6rem;
+     height:5rem;
+     margin-left: 0%;
+     margin-right: 0%;
+     transform: translateX(-20%);
+   
+} 
+
+ body nav ul li a:hover::before{
+    content:'♣';
+    border-left: 0.2rem solid white;
+    color:brown;
+    
+} 
+
+/* partie de description de la librairie */
+
+body section:nth-child(2) {
+    display:flex;
+    flex:1;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-6%);
+}
+
+/* partie présentation des événements */
+
+#Events h1{
+
+    text-align: center;
+
+}
+
+
+#Events table{
+    
+    
+    
+    display:flex;
+    justify-content: center;
+    
+    width:100vw;
+    height:auto;
+
+}
+
+#Events table{
+
+    background-color: beige;
+   
+
+} 
+
+#Events table tr { overflow: break-word;}
+
+#Events table tr:nth-child(odd){
+   background-color:rgb(245,245,220);
+    
+   
+}
+
+#Events table tr:nth-child(even){
+    background-color:white;
+    border-style: none;
+   
+}
+
+#Events table tr td{
+
+   transform:translateY(-20%); 
+
+}
+
+/* Partie principal c'est ici qu'on peut styliser nos articles/produits */
+
+body main{
+    background-color:white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height:176rem;
+    margin:-2rem;
+    width:12rem;
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style:italic;
+    text-align:center;
+    clip-path:polygon(90% 0%, 90% 100%, 10% 100%, 10% 0%);
+}
+
+#someBooks {
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height: 180rem;
+    margin-bottom:1rem;
+    background-color:beige;
+    /* clip-path: polygon(50% 0, 60% 20%, 100% 20%, 100% 80%, 60% 80%, 50% 100%, 40% 80%, 0 80%, 0 20%, 40% 20%); */
+}
+
+
+/* #someBooks a {
+
+    transform:translateY(-20%);
+
+
+} */
+
+#someBooks a:hover {
+
+    background-color: beige;
+    color:brown;
+
+
+}
+
+#someBooks h1{
+
+   
+    transform:translateY(-220%);
+    width:8rem;
+
+
+}
+#someBooks main div{
+
+   transform:translateY(-40%);
+   width:15.5rem;
+   height:40rem;
+   
+
+}
+/* Message d'erreur accueil e-mail */
+
+#formMessage{
+    background-color:beige;
+   text-align: center;
+  
+   width:100vw;
+   height:2rem;
+   
+}
+
+#formMessage section p{
+
+    transform: translateY(40%);
+    color:brown;
+    height:1rem;
+
+
+}
+
+
+
+
+/* Formulaire d'inscription par e-mail */
+#postNewsLetter{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+  
+
+#newsLetter{
+
+    background-color:rgba(200,150,20,0.4);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:30rem;
+    height:18rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align:center;
+  
+
+}
+#newsLetter div form p {
+    
+    transform:translateY(5%);
+
+} 
+
+#newsLetter p div{
+
+    text-align:center;
+}
+
+
+.rgpd{
+    height:auto;
+    width:10rem;
+
+}
+
+#newsLetter div form p div:nth-child(1) label{
+
+    height:auto;
+    width:8rem;
+    margin-left:1rem;
+    margin-right:1rem;
+
+
+}
+
+#TheLabel1{
+
+    width:10rem;
+    transform:translateX(25%);
+   
+}
+
+#TheLabel2{
+
+    width:8rem;
+   
+}
+
+#newsLetter label{
+  
+  height:auto;
+ 
+  
+  color:black;
+  width:15rem; 
+  display: flex;
+  justify-content: center;
+}
+
+
+#newsLetter input{
+    border-style: none;
+    margin:1rem;
+    text-align:center;
+   
+    height:2rem;
+}
+
+
+
+
+#newsLetter form p {
+    
+    display:flex;
+    width:auto;
+    height:12rem;
+    flex:1;
+    flex-direction:column; 
+    justify-content: center; 
+
+}
+
+
+ #newsLetter input[type=checkbox]{
+    margin-top:-0.1rem;
+    order:1; 
+    border-style: none;
+    /* position: relative;
+    left: 1rem;
+    top:5.4rem;
+    height:1rem; */
+    
+
+} 
+#newsLetter input[type=checkbox]:hover{
+
+   cursor:pointer;
+    /* position: relative;
+    left: 1rem;
+    top:5.4rem;
+    height:1rem; */
+    
+
+} 
+
+
+#newsLetter button{
+    border-color:white;
+    border-style: none;
+    background-color:rgba(240,190,60,0.5);
+    margin-top: 1rem;
+    cursor: pointer;
+    width:10rem;
+    height:1.5rem;
+    transform:translateY(-40%);
+    position:relative;
+    left:0rem;
+    top:0.4rem;
+
+
+}
+
+#newsLetter button:hover{
+    color:white;
+}
+
+#rgpd{
+
+    width:80rem;
+
+
+}
+
+/* Partie qui se trouve après le formulaire */
+/* #callToAction a {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  
+    text-align:center;
+} */
+
+#callToAction a:hover{
+
+    background-color:beige;
+    color:brown;
+    
+} 
+
+
+
+
+/* Partie qui concerne le bas de la page */
+
+section footer {
+    
+    background-color: beige;
+}
+footer ul {
+    display:flex;
+    justify-content: space-between;
+}
+
+footer ul li a{
+    margin-right:2.5rem;
+}
+
+footer a:hover{ 
+    text-decoration: underline;
+}
+
+/* calque après le footer */
+
+#Centre {
+    display:flex;
+    justify-content:center;
+    width:100vw;
+    height:2rem;
+    
+}
+
+
+
+
+#calque_2{
+    height:5rem;
+    width:auto;
+    transform:translateY(-10%);
+}
+
+/******************************************************* 
+*           STYLE PAGE DÉTAILS !!!                      /
+/********************************************************/
+ 
+#partDetails{
+
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    width:100vw;
+
+}
+ #partDetails img{
+
+    height:20rem;
+    width:15rem;
+    transform:translateX(5%);
+     
+
+ }
+ #partChild{
+
+    display : flex;
+
+ }
+ #partDetails ul li {margin-bottom:1rem;}
+ 
+ #partDetails:nth-child(2) div {
+     
+    transform:translateX(3.5%);
+    font-size:0.5rem;
+
+}
+
+
+
+/* 
+****************************************************
+                RGPD
+*****************************************************
+*/
+
+#rgpd{text-align: center;
+    display:flex;
+    align-items:stretch;
+    flex:1;
+font-weight:bold;
+width:18rem;
+transform:translateX(5%);
+
+}
+
+#sectionRGPD{
+
+  
+    display:flex;
+    flex:1;
+    justify-content: center;
+    word-break: break-word;
+    width:30rem;
+
+
+}
+
+/* Part Rencontres */
+
+.meetingImg{ height : 2rem; }
