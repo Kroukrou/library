@@ -3,7 +3,7 @@
 
 session_start();
 
-require_once 'includes/connexion.php';
+require_once "includes/connexion.php";
 
 $query = $db->query('SELECT events.title_event, events.date_event FROM events  ORDER BY events.date_event DESC LIMIT 5');
 $select = $db->query('SELECT * FROM books LIMIT 3');
