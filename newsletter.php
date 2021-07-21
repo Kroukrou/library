@@ -4,7 +4,7 @@
 
   use PHPMailer\PHPMailer\PHPMailer;
 
-// The path to the fonction above is in the folder source linked to the namespace PHPMailer\PHPMailer and the class PHPMailer 
+// The path of the fonction above is in the folder source linked to the namespace PHPMailer\PHPMailer and the class PHPMailer 
   if(isset($_POST['email'], $_POST["rgpd"]) && !empty($_POST['email']) && !empty($_POST['rgpd'])){
 
 
