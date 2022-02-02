@@ -8,8 +8,6 @@ if(!isset($_SESSION['cart'])){
 
 }
 
-unset($_SESSION['qte_array']);
-
 if(isset($_GET["id"]) && !empty($_GET['id'])){
 
 
@@ -171,6 +169,5 @@ if($book == false){
 
         
         </section>
-
 <?php require_once "layouts/footer.php"; ?>
 

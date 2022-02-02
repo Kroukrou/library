@@ -2,8 +2,6 @@
 
   session_start();
 
-  use PHPMailer\PHPMailer\PHPMailer;
-
 // The path of the fonction above is in the folder source linked to the namespace PHPMailer\PHPMailer and the class PHPMailer 
   if(isset($_POST['email'], $_POST["rgpd"]) && !empty($_POST['email']) && !empty($_POST['rgpd'])){
 
@@ -35,34 +33,9 @@
     if($emailVerified->execute()){
 
 
-        require_once "vendor/autoload.php";
-        
-
-        $mailer = new PHPMailer(true);
-
     try {
 
-       $mailer->isSMTP();
-       $mailer->Host = 'localhost';
-       $mailer->Port = 1025;
-       $mailer->CharSet = 'UTF-8';
-
-       $mailer->setFrom('louis@librairie.com', 'Librairie');
-
-       $mailer->addAddress($_POST['email']);
-
-       $mailer->isHTML();
-
-       $mailer->Subject = "Vous vous êtes inscrit !";
-
-               
-                 // Message en HTML
-       $mailer->Body = "<p>Merci de l'intérêt que vous portez à nos livres !</p>";
-
-                 // si absence du HTML
-       $mailer->AltBody = "Merci de l'intérêt que vous portez à nos livres !";
- 
-       $mailer->send();
+      
 
       $_SESSION["success"] = "Votre inscription s'est effectuée";
 
@@ -87,7 +60,7 @@
     } else { 
         
         $_SESSION["error"] = "Votre adresse e-mail a déjà été envoyée";
-        header("location: index.php");      
+        header("location: contact.php");      
     }
       
     } else {
@@ -95,7 +68,7 @@
         
         
        $_SESSION["error"] = "Une erreur est survenue lors du chargement";
-       header('location: index.php');
+       header('location: contact.php');
       
       
     }
@@ -104,6 +77,6 @@
  
 } else {
     $_SESSION["error"] = "Tous les champs sont obligatoires";
-    header('Location: index.php');
+    header('Location: contact.php');
   }
    

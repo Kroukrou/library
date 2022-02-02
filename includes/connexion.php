@@ -6,7 +6,7 @@ define('USER', 'root');
 
 define('PASSWORD','');
 
-define('DBNAME','librairie');
+define('DBNAME','hello');
 
 try{
 

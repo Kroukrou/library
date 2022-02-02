@@ -9,13 +9,30 @@ $query = $db->query('SELECT events.title_event, events.date_event FROM events  O
 $select = $db->query('SELECT * FROM books LIMIT 3');
 
 
-?>
-              <?php   require_once "layouts/header.php"; ?>
 
-              <section>
-               
+              require_once "layouts/header.php"; ?>
+
+              
+             
+
+
+
+              <section style="background-image: url(public/img/Lalibrairie/IMG_4934-min-1024x768.jpg);
+              
+              background-position: bottom;
+              background-size: cover;
+              transform: translate(0%);
+              opacity: .5;
+
+              
+              ">
+               <?php if(isset($_SESSION['success'])): ?>
+
+              <p style="color: brown;font-weight:bold;position: absolute;transform: translate(0%, -210%);display:flex; justify-content: center; width: 100vw;"><?php echo $_SESSION['success'] ?></p>
+
+              <?php unset($_SESSION['success']); endif; ?>
               <p>
-                     <ul style="color:white;">
+                     <ul style="color: white; font-size: 1em;font-weight: bold;border-bottom: 1px dotted gray; width: 180vw;text-align: center;">
                             <li>Notre librairie comporte des livres jeunesse qui sauront satisfaire aussi bien les plus petits que les adolescents.</li>
                             <li>Située en plein centre Ville et facile d'accès.</li>
                             <li>Nous sommes ouvert de 8h à 12h et de 14h à 18h du Lundi au Vendredi.</li>
@@ -24,9 +41,9 @@ $select = $db->query('SELECT * FROM books LIMIT 3');
               
               </section>
                          
-              <section id="Events">
+              <section id="Events" style="width: 100%;">
                 
-                <h1>La librairie propose aussi des activités ludiques et éducatives</h1>
+                <h1>La librairie propose des activités ludiques et éducatives</h1>
 
 
 
@@ -74,56 +91,5 @@ $select = $db->query('SELECT * FROM books LIMIT 3');
                            <?php endforeach; ?>
                      </main>  
               </section>
-                    <section id="callToAction">
               
-                     <!-- <a href="conseils_de_lectures">« voir plus de livres »</a> position:relative; left:45%;transform:translateY(-110%); font-size:0.6rem; -->
-                 <a style="position:absolute;left:6rem;transform:translateY(-100%);font-size:0.8rem;"
-   href="conseils_de_lectures.php">voir plus de livres &erarr; </a>
-              </section> 
-              
-               <section id="formMessage">
-                    <section>
-                     
-                    <?php if(isset($_SESSION['error'])): ?>
-                     
-                     <p><?php echo $_SESSION['error'] ?></p>
-
-
-                    <?php unset($_SESSION['error']); endif; ?>
-                    
-                    <?php if(isset($_SESSION['success'])): ?>
-
-                    <p><?php echo $_SESSION['success'] ?></p>
-
-                    <?php unset($_SESSION['success']); endif; ?>
-                    
-                    </section> 
-              </section>
-               
-               <section id="postNewsLetter">
-                     <section id="newsLetter">
-                            <div>
-                              <form action="newsletter.php" method="post">
-                                <p>
-                           
-                                   <div>                         
-                                       <label id="TheLabel1"  style="width:10rem;transform:translateX(25%);"for="email">Inscrivez-vous à notre NewsLetter en laissant votre email ici</label>
-                                        <input type="email" name="email">
-                                   </div> 
-                              
-                                   <label id="TheLabel2" class="rgpd" for="rgpd">En cochant la case ci-dessous, vous acceptez nos conditions d'utilisation</label> 
-                                   <input required type="checkbox" name="rgpd">
-                             
-                                   <input type="hidden">
-
-                                   <button type="submit">Ok</button>
-
-                                 
-                                 </p>
-                              </form>
-                           </div>
-                     </section>
-              </section>
        <?php require_once "layouts/footer.php"; ?>
-
- 

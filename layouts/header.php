@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
-              <link rel="stylesheet" href="public/css/styles.css" type="text/css">
+              <link rel="stylesheet" href="styles.css" type="text/css">
 		<title>
 			Bienvenu à l'Alpha-bêtise librairie !
 			
@@ -18,7 +18,6 @@
 				<ul>
 					<li><a href="index.php">Accueil</a></li>
 					<li><a href="rencontres.php">Rencontres</a></li>
-					<li><a href="la_librairie.php">La librairie</a></li>
 					<li><a href="contact.php">Contact</a></li>
 
 				</ul>
