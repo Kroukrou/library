@@ -11,7 +11,7 @@
 		
 	</head>
 	<body>
-	 <section>
+	
 		<header>
 		    <div><img id="calque_1" src="public/img/Logo/Logo-AlphaBetise-black-horizontal.svg" alt="Logo_Alphabêtise"></div>
             <nav>
@@ -23,6 +23,3 @@
 				</ul>
             </nav>
 		</header>
-	</section>
-		
-	
