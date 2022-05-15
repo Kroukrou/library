@@ -1,4 +1,3 @@
-<section>
 			<footer>
 				
 				<ul>
@@ -13,8 +12,7 @@
 			
 			</footer>
 			<div id="Centre"><a href="index.php"><img id="calque_2" src="public/img/Logo/Logo-AlphaBetise-Color-Vertical.svg" alt="Logo_Alphabêtise"></a></div>
-            </section>
+            
 		
 		</body>
 </html>
-	
