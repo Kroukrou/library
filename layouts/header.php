@@ -17,9 +17,9 @@
             <nav>
 				<ul>
 					<li><a href="index.php">Accueil</a></li>
-					<li><a href="rencontres.php">Rencontres</a></li>
+					<span>&nbsp;</span>
 					<li><a href="contact.php">Contact</a></li>
-
+					<li><a href="rencontres.php">Rencontres</a></li>
 				</ul>
             </nav>
 		</header>
