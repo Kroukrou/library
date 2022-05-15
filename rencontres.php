@@ -1,24 +1,23 @@
-<?php 
-
-
+<?php    
 
       require_once "includes/connexion.php";
 
-
+      require_once "layouts/header.php"; 
+      
       $query = $db->query('SELECT events.*, reservations.price_reservation FROM events INNER JOIN reservations ON reservations.reservation_event_id = events.id ORDER BY events.date_event DESC LIMIT 2');
 
       $query->execute();
       
       $posts = $query->fetchAll();
       
-      require_once "layouts/header.php"; 
+      
       
     
     ?>
 
-    <section style="transform:translateX(50%);background-color:beige;height:50rem;width:50vw;">
-    <section style="position:relative;right:5rem;height:20rem;transform:translateX(50%);">
-    <main style="transform:translateX(-10%);height:50rem;position:relative;top:1rem;">
+    <section style="border: 1em solid black;transform: translateX(-1.5%);background-color:beige;height:50rem;width:100vw;">
+    <section style="position:relative;right:5rem;top:1rem;height:20rem;transform:translateX(50%);">
+    <main style="border: 1em solid black;transform:translateX(-10%);height:48rem;position:relative;top:1rem;">
 
     <?php foreach($posts as $post): ?>
      
