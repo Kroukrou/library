@@ -17,7 +17,7 @@
 
     <section style="border: 1em solid black;transform: translateX(-1.5%);background-color:beige;height:50rem;width:100vw;">
     <section style="position:relative;right:5rem;top:1rem;height:20rem;transform:translateX(50%);">
-    <main style="border: 1em solid black;transform:translateX(-10%);height:48rem;position:relative;top:1rem;">
+    <main style="border: 1em solid white;transform:translateX(-10%);height:48rem;position:relative;top:1rem;">
 
     <?php foreach($posts as $post): ?>
      
