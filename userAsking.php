@@ -13,7 +13,7 @@
 
 
         $_SESSION['error'] = 'Votre adresse email est invalide';
-        header('location: index.php');
+        header('Location: index.php');
       
   } else { 
         
@@ -39,7 +39,7 @@
 
       $_SESSION["success"] = "Votre inscription s'est effectuée";
 
-       header('location: index.php');
+       header('Location: index.php');
 
     }catch(Exception $error){
 
@@ -60,7 +60,7 @@
     } else { 
         
         $_SESSION["error"] = "Votre adresse e-mail a déjà été envoyée";
-        header("location: contact.php");      
+        header("Location: contact.php");      
     }
       
     } else {
@@ -68,7 +68,7 @@
         
         
        $_SESSION["error"] = "Une erreur est survenue lors du chargement";
-       header('location: contact.php');
+       header('Location: contact.php');
       
       
     }
